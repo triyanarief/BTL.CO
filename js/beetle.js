@@ -1,9 +1,3 @@
-/*
- *   Beetle
- *   Written by Pasquale Vitiello (pasqualevitiello@gmail.com),
- *   mokaine.com
- */
-
 jQuery(document).ready(function ($) {
 
 
@@ -621,8 +615,8 @@ jQuery(document).ready(function ($) {
         var $this = $('.dribbble-items');
         $this.find('.item:nth-of-type(4n)').addClass('last');
         $this.removeClass('preload');
-        $this.children('.landing-els').remove(); 
-        centerOverlay();           
+        $this.children('.landing-els').remove();
+        centerOverlay();
 
     };
 
@@ -638,9 +632,9 @@ jQuery(document).ready(function ($) {
 
         $(window).load(function() {
 
-            centerOverlay(); 
+            centerOverlay();
 
-        });        
+        });
 
     }
 
@@ -1942,7 +1936,7 @@ jQuery(document).ready(function ($) {
             var infowindow = new google.maps.InfoWindow({
                 content: contentString
             });
-            
+
             google.maps.event.addListener(marker, 'click', function() {
                 infowindow.open(map,marker);
             });
